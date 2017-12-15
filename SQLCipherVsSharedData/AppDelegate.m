@@ -11,17 +11,9 @@
 //       and update this project to reflect them.
 //       See the README.md for details.
 //
-// App ID: org.signal.sqlciphervsshareddata
-// App Group ID: org.signal.sqlciphervsshareddata.group
+// Example App ID: org.signal.sqlciphervsshareddata
+// Example App Group ID: org.signal.sqlciphervsshareddata.group
 NSString *const kApplicationGroupId = @"group.org.signal.sqlciphervsshareddata";
-
-// This demo app offers two ways to reproduce the issue:
-//
-// * If you DO NOT create any content, the app will crash _the second time_ you launch the
-//   app and send it to the background.
-// * If you DO create some content (e.g. make an empty table), the app will crash _the first
-//   time_ you launch the app and send it to the background.
-#define CREATE_CONTENT
 
 #define CONVERT_TO_STRING(X) #X
 #define CONVERT_EXPR_TO_STRING(X) CONVERT_TO_STRING(X)
@@ -69,28 +61,29 @@ NSAssert(0, @"Assertion failed: %s", CONVERT_EXPR_TO_STRING(X));                
         DemoAssert(status == SQLITE_OK);
     }
     // I've never seen this issue without encryption being enabled.
+    //
+    // If you comment out this block, the app will _NOT_ be terminated when it is suspended.
     {
         NSString *encryptionKey = @"any key will do";
         NSData *keyData = [encryptionKey dataUsingEncoding:NSUTF8StringEncoding];
         int status = sqlite3_key(db, [keyData bytes], (int)[keyData length]);
         DemoAssert(status == SQLITE_OK);
     }
-    // "journal_mode = WAL" is the simplest repro that I could find.
+    // "journal_mode = WAL" + "create some content" is the simplest repro that I could find.
+    // I'm not sure if it's possible to reproduce this issue without WAL enabled.
     {
         int status = sqlite3_exec(db, "PRAGMA journal_mode = WAL;", NULL, NULL, NULL);
         DemoAssert(status == SQLITE_OK);
     }
     {
-        // See comments on CREATE_CONTENT symbol above.
-#ifdef CREATE_CONTENT
+        // We make the simplest possible modification to the database by creating a table.
+        // There's nothing special about the CREATE TABLE command;
+        // any SQL command that modifies the database will have the same effect.
         DemoAssert(isNewDatabaseFile);
         if (isNewDatabaseFile) {
-            // There's nothing special about the CREATE TABLE command;
-            // any SQL command that modifies the database will have the same effect.
             int status = sqlite3_exec(db, "CREATE TABLE groups ( group_id integer PRIMARY KEY );", NULL, NULL, NULL);
             DemoAssert(status == SQLITE_OK);
         }
-#endif
     }
     DemoLog(@"didFinishLaunchingWithOptions");
    
@@ -123,12 +116,9 @@ NSAssert(0, @"Assertion failed: %s", CONVERT_EXPR_TO_STRING(X));                
     static NSString *result = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        // See comments on CREATE_CONTENT symbol above.
-#ifdef CREATE_CONTENT
+        // In the "create a table" case, we can even create a new database file each time the app is launched
+        // and it will still be terminated when sent to the background.
         result = [NSString stringWithFormat:@"Database-Filename-%d.sqlite", (int) arc4random_uniform(60000)];
-#else
-        result = [NSString stringWithFormat:@"Database-Filename.sqlite"];
-#endif
     });
     return result;
 }
