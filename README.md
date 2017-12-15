@@ -2,7 +2,7 @@
 
 ### Summary
 
-iOS apps can't share an encrypted database with app extensions (e.g. share extensions) without being terminated every time they enter the background.
+iOS apps can't share an encrypted database with app extensions (e.g. share extensions) without being terminated every time they are suspended.
 
 iOS won't let suspended apps retain a file lock on apps in the "shared data container" used to share files between iOS apps & their app extensions.
 
@@ -23,11 +23,11 @@ The exception code 0xdead10cc indicates that an application has been terminated 
   * iOS only terminates apps for this reason when app transition from the `background` to `suspended` states.  iOS main apps can delay being suspended by creating a "background task", but this only defers the issue briefly as there are strict limits on the duration of "background tasks".
   * `0xdead10cc` terminations don't occur in the simulator and won't occur on devices if the debugger is attached.
   * These `0xdead10cc` terminations usually don't yield crash logs on the device, but always show up in the device console logs.
-* SQLCipher databases appear to retain a file lock on the database file at all times in some configurations, even if no database access.
+* SQLCipher databases appear to retain a file lock on the database file at all times in some configurations, even when the database is not being accessed.
   * This demo app demonstrates this behavior using an empty database with encryption enabled and  `journal_mode = WAL`.
   * There may be other configurations that also demonstrate this issue.
   * SQLCipher databases without encryption enabled _DO NOT_ exhibit this issue.
-* iOS apps which which keep an encrypted SQLCipher database open at all times are terminated every time it is sent to the background, even if they are not doing any explicit database access.
+* iOS apps which keep an encrypted SQLCipher database open at all times are terminated every time it is sent to the background, even if they are not doing any explicit database access.
 
 ### Steps to Reproduce
 
