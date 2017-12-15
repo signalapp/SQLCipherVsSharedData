@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CD3C26617AF751EEAA394EA /* libPods-SQLCipherVsSharedData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 814B16255AF20261C4176579 /* libPods-SQLCipherVsSharedData.a */; };
+		340835051FE3227E00E70572 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340835041FE3227E00E70572 /* AppDelegate.m */; };
+		340835081FE3227E00E70572 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340835071FE3227E00E70572 /* ViewController.m */; };
+		3408350B1FE3227E00E70572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340835091FE3227E00E70572 /* Main.storyboard */; };
+		3408350D1FE3227E00E70572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3408350C1FE3227E00E70572 /* Assets.xcassets */; };
+		340835101FE3227E00E70572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3408350E1FE3227E00E70572 /* LaunchScreen.storyboard */; };
+		340835131FE3227E00E70572 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 340835121FE3227E00E70572 /* main.m */; };
+		341A06211FE3260D00417417 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 341A06201FE3260D00417417 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		340835001FE3227E00E70572 /* SQLCipherVsSharedData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLCipherVsSharedData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		340835031FE3227E00E70572 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		340835041FE3227E00E70572 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		340835061FE3227E00E70572 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		340835071FE3227E00E70572 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3408350A1FE3227E00E70572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3408350C1FE3227E00E70572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3408350F1FE3227E00E70572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		340835111FE3227E00E70572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340835121FE3227E00E70572 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		341A06201FE3260D00417417 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		341A06221FE329F800417417 /* SQLCipherVsSharedData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SQLCipherVsSharedData.entitlements; sourceTree = "<group>"; };
+		478C10DE9E2EDDA05D049A1F /* Pods-SQLCipherVsSharedData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLCipherVsSharedData.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQLCipherVsSharedData/Pods-SQLCipherVsSharedData.release.xcconfig"; sourceTree = "<group>"; };
+		76758020FC9463E87CBC036C /* Pods-SQLCipherVsSharedData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLCipherVsSharedData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQLCipherVsSharedData/Pods-SQLCipherVsSharedData.debug.xcconfig"; sourceTree = "<group>"; };
+		814B16255AF20261C4176579 /* libPods-SQLCipherVsSharedData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQLCipherVsSharedData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		340834FD1FE3227E00E70572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD3C26617AF751EEAA394EA /* libPods-SQLCipherVsSharedData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		137E1E97AC41A70B885C75D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				814B16255AF20261C4176579 /* libPods-SQLCipherVsSharedData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		340834F71FE3227D00E70572 = {
+			isa = PBXGroup;
+			children = (
+				341A06201FE3260D00417417 /* README.md */,
+				340835021FE3227E00E70572 /* SQLCipherVsSharedData */,
+				340835011FE3227E00E70572 /* Products */,
+				959CD6EB293B7D1A9406A188 /* Pods */,
+				137E1E97AC41A70B885C75D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		340835011FE3227E00E70572 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				340835001FE3227E00E70572 /* SQLCipherVsSharedData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		340835021FE3227E00E70572 /* SQLCipherVsSharedData */ = {
+			isa = PBXGroup;
+			children = (
+				341A06221FE329F800417417 /* SQLCipherVsSharedData.entitlements */,
+				340835031FE3227E00E70572 /* AppDelegate.h */,
+				340835041FE3227E00E70572 /* AppDelegate.m */,
+				340835061FE3227E00E70572 /* ViewController.h */,
+				340835071FE3227E00E70572 /* ViewController.m */,
+				340835091FE3227E00E70572 /* Main.storyboard */,
+				3408350C1FE3227E00E70572 /* Assets.xcassets */,
+				3408350E1FE3227E00E70572 /* LaunchScreen.storyboard */,
+				340835111FE3227E00E70572 /* Info.plist */,
+				340835121FE3227E00E70572 /* main.m */,
+			);
+			path = SQLCipherVsSharedData;
+			sourceTree = "<group>";
+		};
+		959CD6EB293B7D1A9406A188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76758020FC9463E87CBC036C /* Pods-SQLCipherVsSharedData.debug.xcconfig */,
+				478C10DE9E2EDDA05D049A1F /* Pods-SQLCipherVsSharedData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		340834FF1FE3227E00E70572 /* SQLCipherVsSharedData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340835161FE3227E00E70572 /* Build configuration list for PBXNativeTarget "SQLCipherVsSharedData" */;
+			buildPhases = (
+				EC325A4D90FBF6B134952FD4 /* [CP] Check Pods Manifest.lock */,
+				340834FC1FE3227E00E70572 /* Sources */,
+				340834FD1FE3227E00E70572 /* Frameworks */,
+				340834FE1FE3227E00E70572 /* Resources */,
+				496BB82AFEB10A2347D2BDD7 /* [CP] Embed Pods Frameworks */,
+				D2002A73F207B5B6E2EFB0E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLCipherVsSharedData;
+			productName = SQLCipherVsSharedData;
+			productReference = 340835001FE3227E00E70572 /* SQLCipherVsSharedData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		340834F81FE3227D00E70572 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Signal;
+				TargetAttributes = {
+					340834FF1FE3227E00E70572 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 340834FB1FE3227D00E70572 /* Build configuration list for PBXProject "SQLCipherVsSharedData" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 340834F71FE3227D00E70572;
+			productRefGroup = 340835011FE3227E00E70572 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				340834FF1FE3227E00E70572 /* SQLCipherVsSharedData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		340834FE1FE3227E00E70572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340835101FE3227E00E70572 /* LaunchScreen.storyboard in Resources */,
+				3408350D1FE3227E00E70572 /* Assets.xcassets in Resources */,
+				341A06211FE3260D00417417 /* README.md in Resources */,
+				3408350B1FE3227E00E70572 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		496BB82AFEB10A2347D2BDD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQLCipherVsSharedData/Pods-SQLCipherVsSharedData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2002A73F207B5B6E2EFB0E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQLCipherVsSharedData/Pods-SQLCipherVsSharedData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC325A4D90FBF6B134952FD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SQLCipherVsSharedData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		340834FC1FE3227E00E70572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340835081FE3227E00E70572 /* ViewController.m in Sources */,
+				340835131FE3227E00E70572 /* main.m in Sources */,
+				340835051FE3227E00E70572 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		340835091FE3227E00E70572 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3408350A1FE3227E00E70572 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3408350E1FE3227E00E70572 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3408350F1FE3227E00E70572 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		340835141FE3227E00E70572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		340835151FE3227E00E70572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		340835171FE3227E00E70572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76758020FC9463E87CBC036C /* Pods-SQLCipherVsSharedData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SQLCipherVsSharedData/SQLCipherVsSharedData.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U68MSDN6DR;
+				INFOPLIST_FILE = SQLCipherVsSharedData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.signal.sqlciphervsshareddata.SQLCipherVsSharedData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		340835181FE3227E00E70572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478C10DE9E2EDDA05D049A1F /* Pods-SQLCipherVsSharedData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SQLCipherVsSharedData/SQLCipherVsSharedData.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U68MSDN6DR;
+				INFOPLIST_FILE = SQLCipherVsSharedData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.signal.sqlciphervsshareddata.SQLCipherVsSharedData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		340834FB1FE3227D00E70572 /* Build configuration list for PBXProject "SQLCipherVsSharedData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340835141FE3227E00E70572 /* Debug */,
+				340835151FE3227E00E70572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340835161FE3227E00E70572 /* Build configuration list for PBXNativeTarget "SQLCipherVsSharedData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340835171FE3227E00E70572 /* Debug */,
+				340835181FE3227E00E70572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 340834F81FE3227D00E70572 /* Project object */;
+}
