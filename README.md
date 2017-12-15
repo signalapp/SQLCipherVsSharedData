@@ -2,7 +2,7 @@
 
 ### Summary
 
-iOS apps can't share an encrypted database with app extensions (e.g. share extensions) without being terminated every time they are suspended.
+iOS apps can't share an encrypted database with app extensions (e.g. share extensions) without being terminated every time they enter the background.
 
 iOS won't let suspended apps retain a file lock on apps in the "shared data container" used to share files between iOS apps & their app extensions.
 
